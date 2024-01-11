@@ -1,0 +1,24 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "avenir";
+}
+
+/* media query for mobile*/
+/* media query for tablet*/
+/* media query desktops*/
+@font-face {
+  font-family: "harry";
+  src: url("../../assets/fonts/harry.ttf") format("truetype");
+}
+@font-face {
+  font-family: "owl";
+  src: url("../../assets/fonts/owl.otf") format("truetype");
+}/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,19 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "avenir";
+}
+@import "../styles/patials/breakpoints";
+@import "../styles/patials/colors";
+@import "../styles/patials/fonts";
+@import "../styles/patials/mixins";
+@import "../styles/patials/navbar";
+@import "../styles/patials/recipes";
+@import "../styles/patials/footer";

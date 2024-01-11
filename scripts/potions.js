@@ -1,5 +1,3 @@
-// Axios Request Boilerplate
-// axios.get(URL_ENDPOINT); <- this returns a response from the URL_ENDPOINT
 //Inserting an image
 const POTTER_BASE_URL = "https://api.potterdb.com/v1/potions";
 const insertImage = (imageInfo) => {
@@ -18,8 +16,13 @@ const insertImage = (imageInfo) => {
   image.src = imageInfo.data[randomPotionNumber].attributes.image;
   image.alt = "potion image";
   image.classList.add("img--potion");
+  const ingredients = document.createElement("p");
+  ingredients.textContent =
+    imageInfo.data[randomPotionNumber].attributes.ingredients;
+  ingredients.classList.add("ingredients");
   potionDiv.appendChild(name);
   potionDiv.appendChild(image);
+  potionDiv.appendChild(ingredients);
 };
 const getPotionImage = async () => {
   try {

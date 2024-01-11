@@ -94,16 +94,7 @@ body {
   padding: 1.25rem;
   align-items: center;
   background-color: #fdf7c3;
-}
-@media only screen and (min-width: 768px) {
-  #elixirs_section {
-    flex-direction: row;
-  }
-}
-@media only screen and (min-width: 1280px) {
-  #elixirs_section {
-    flex-direction: row;
-  }
+  flex-direction: column;
 }
 
 #potion_lab {
@@ -117,7 +108,7 @@ body {
   padding-bottom: 3rem;
   padding-right: 2rem;
 }
-#potion_lab .elixir-details-title {
+#potion_lab .elixirs_details-title {
   text-align: center;
   padding: 1rem;
   margin-bottom: 2rem;
@@ -168,6 +159,16 @@ body {
   height: auto;
 }
 
+@media only screen and (min-width: 768px) {
+  #elixirs_section {
+    flex-direction: row;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  #elixirs_section {
+    flex-direction: row;
+  }
+}
 #potion {
   padding: 1rem;
   background-color: #e5d4ff;

@@ -5,14 +5,7 @@
   padding: 1.25rem;
   align-items: center;
   background-color: $yellow;
-
-  @include tablet {
-    flex-direction: row;
-  }
-
-  @include desktop {
-    flex-direction: row;
-  }
+  flex-direction: column;
 }
 
 #potion_lab {
@@ -26,7 +19,7 @@
   padding-bottom: 3rem;
   padding-right: 2rem;
 
-  .elixir-details-title {
+  .elixirs_details-title {
     text-align: center;
     padding: 1rem;
     margin-bottom: 2rem;
@@ -81,5 +74,17 @@
         height: auto;
       }
     }
+  }
+}
+
+@include tablet {
+  #elixirs_section {
+    flex-direction: row;
+  }
+}
+
+@include desktop {
+  #elixirs_section {
+    flex-direction: row;
   }
 }

@@ -1,0 +1,21 @@
+footer {
+  background-color: $purple;
+  color: $white;
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9em;
+
+  @include mobile {
+    padding: 15px;
+    font-size: 0.8em;
+  }
+
+  @include tablet {
+    padding: 20px;
+  }
+
+  @include desktop {
+    padding: 25px;
+    font-size: 1em;
+  }
+}

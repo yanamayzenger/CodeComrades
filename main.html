@@ -3,73 +3,87 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Wizard's Elixir Mixer</title>
+    <title>Wizard's Elixirs and Potions</title>
     <link rel="stylesheet" href="./styles/main.css" />
   </head>
   <body>
-    <header>
-      <h1>Welcome to the Wizard's Elixir Info</h1>
-      <nav>
-        <!-- Navigation bar, if needed -->
+    <header class="header">
+      <div class="header_title">
+        <a href="#search_section">
+          <img src="./assets/images/antidote.webp" alt="Logo" class="logo" />
+        </a>
+        Welcome to the Wizard's Elixirs and Potions Info
+      </div>
+      <nav class="header_nav">
+        <ul>
+          <li><a href="#elixirs_section">Elixirs</a></li>
+          <li><a href="#search_section">Potion Search</a></li>
+        </ul>
       </nav>
     </header>
-
     <main>
-      <section id="potion-lab">
-        <h1>Elixir Details</h1>
-        <div class="elixir" id="polyjuice">
-          <h2>Polyjuice Potion</h2>
-          <img
-            src="./assets/images/polyjuice.jpg.webp"
-            alt="Polyjuice Potion"
-          />
-          <p>
-            Want to make yourself, er, not yourself? Well you need Polyjuice!
-            Ingredients: Lacewing flies, Bicorn horn, Knotgrass, Fluxweed,
-            Boomslang skin, and a piece of hair from the person you want to
-            become.
-          </p>
-        </div>
+      <section id="elixirs_section">
+        <section id="potion_lab">
+          <h1>Elixir Details</h1>
+          <div class="elixir" id="polyjuice">
+            <h2>Polyjuice Potion</h2>
+            <img
+              src="./assets/images/polyjuice.jpg.webp"
+              alt="Polyjuice Potion"
+            />
+            <p>
+              Want to make yourself, er, not yourself? Well you need Polyjuice!
+              Ingredients: Lacewing flies, Bicorn horn, Knotgrass, Fluxweed,
+              Boomslang skin, and a piece of hair from the person you want to
+              become.
+            </p>
+          </div>
 
-        <div class="elixir" id="felix-felicis">
-          <h2>Felix Felicis</h2>
-          <img
-            src="./assets/images/felix-felicis.jpg.webp"
-            alt="Felix Felicis"
-          />
-          <p>
-            If it's a dose of luck you're after, you've come to the right place.
-            Ingredients: Ashwinder egg, Squill bulb, Murtlap tentacle, tincture
-            of thyme, Occamy eggshell, and some powered rue.
-          </p>
-        </div>
+          <div class="elixir" id="felix_felicis">
+            <h2>Felix Felicis</h2>
+            <img
+              src="./assets/images/felix-felicis.jpg.webp"
+              alt="Felix Felicis"
+            />
+            <p>
+              If it's a dose of luck you're after, you've come to the right
+              place. Ingredients: Ashwinder egg, Squill bulb, Murtlap tentacle,
+              tincture of thyme, Occamy eggshell, and some powered rue.
+            </p>
+          </div>
 
-        <div class="elixir" id="amortentia">
-          <h2>Amortentia</h2>
-          <img src="./assets/images/amortentia.jpg.webp" alt="Amortentia" />
-          <p>
-            If there's a special someone you've got your sights on, then this is
-            the potion for you. Ingredients: Ashwinder egg, Rose thorn,
-            Peppermint, Powered moonstone, Pearl dust.
-          </p>
-        </div>
+          <div class="elixir" id="amortentia">
+            <h2>Amortentia</h2>
+            <img src="./assets/images/amortentia.jpg.webp" alt="Amortentia" />
+            <p>
+              If there's a special someone you've got your sights on, then this
+              is the potion for you. Ingredients: Ashwinder egg, Rose thorn,
+              Peppermint, Powered moonstone, Pearl dust.
+            </p>
+          </div>
 
-        <div class="elixir" id="ageing-potion">
-          <h2>Ageing Potion</h2>
-          <img
-            src="./assets/images/ageing-potion.jpg.webp"
-            alt="Ageing Potion"
-          />
-          <p>
-            There's loads of fun to be had if you can pretend you're a real life
-            grown-up and this lovely liquid will help in that department.
-            Ingredients: Red wine, Prune juice, Hairy fungus, Tortoise shell,
-            Caterpillar, Bat tongue.
-          </p>
-        </div>
+          <div class="elixir" id="ageing_potion">
+            <h2>Ageing Potion</h2>
+            <img
+              src="./assets/images/ageing-potion.jpg.webp"
+              alt="Ageing Potion"
+            />
+            <p>
+              There's loads of fun to be had if you can pretend you're a real
+              life grown-up and this lovely liquid will help in that department.
+              Ingredients: Red wine, Prune juice, Hairy fungus, Tortoise shell,
+              Caterpillar, Bat tongue.
+            </p>
+          </div>
+        </section>
+      </section>
+
+      <section id="search_section">
+        <h2>Search for Elixirs and Potions</h2>
+        <input type="text" id="search_bar" placeholder="Search elixirs..." />
+        <!-- Additional search functionality can be implemented here -->
       </section>
     </main>
-
     <footer>
       <p>&copy; 2024 Wizard's Elixir Mixer. A Harry Potter Fan Project.</p>
     </footer>

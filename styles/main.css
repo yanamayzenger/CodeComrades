@@ -8,7 +8,7 @@ body {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: "avenir";
+  font-family: "harry";
 }
 
 /* media query for mobile*/
@@ -21,4 +21,93 @@ body {
 @font-face {
   font-family: "owl";
   src: url("../../assets/fonts/owl.otf") format("truetype");
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #2d004d;
+}
+.header .header_title {
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+  padding-bottom: 0.5rem;
+}
+.header .header_title .logo {
+  height: 50px;
+  margin-right: 10px;
+  padding-bottom: 1.5rem;
+  padding-right: 1rem;
+}
+.header .header_title a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #ffffff;
+}
+.header .header_nav ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  font-size: 1.5rem;
+}
+.header .header_nav ul li {
+  margin: 0 10px;
+}
+.header .header_nav ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  padding: 10px;
+  border: 2px solid transparent;
+}
+.header .header_nav ul li a:hover {
+  border-color: #ffffff;
+}
+
+@media only screen and (max-width: 767px) {
+  .header_nav ul {
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 1rem;
+    font-size: 1em;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .header {
+    padding: 1rem 2rem;
+    font-size: 1.5rem;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .header {
+    padding: 1rem 2rem;
+    font-size: 2rem;
+  }
+}
+footer {
+  background-color: #2d004d;
+  color: #ffffff;
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9em;
+}
+@media only screen and (max-width: 767px) {
+  footer {
+    padding: 15px;
+    font-size: 0.8em;
+  }
+}
+@media only screen and (min-width: 768px) {
+  footer {
+    padding: 20px;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  footer {
+    padding: 25px;
+    font-size: 1em;
+  }
 }/*# sourceMappingURL=main.css.map */

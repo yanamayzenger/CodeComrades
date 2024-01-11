@@ -96,6 +96,12 @@ body {
   background-color: #fdf7c3;
   flex-direction: column;
 }
+#elixirs_section .elixirs_details-title {
+  text-align: center;
+  margin: 2rem;
+  font-size: 2rem;
+  color: #033807;
+}
 
 #potion_lab {
   width: 100%;
@@ -107,14 +113,6 @@ body {
   padding-top: 1rem;
   padding-bottom: 3rem;
   padding-right: 2rem;
-}
-#potion_lab .elixirs_details-title {
-  text-align: center;
-  padding: 1rem;
-  margin-bottom: 2rem;
-  width: 100%;
-  font-size: 5rem;
-  color: #033807;
 }
 #potion_lab .elixir_card {
   width: 18.75rem;
@@ -175,7 +173,7 @@ body {
   text-align: center;
 }
 #potion .potion_details-title {
-  margin-bottom: 2rem;
+  margin: 2rem;
   font-size: 2rem;
   color: #033807;
 }

@@ -6,6 +6,12 @@
   align-items: center;
   background-color: $yellow;
   flex-direction: column;
+  .elixirs_details-title {
+    text-align: center;
+    margin: 2rem;
+    font-size: 2rem;
+    color: $green;
+  }
 }
 
 #potion_lab {
@@ -18,15 +24,6 @@
   padding-top: 1rem;
   padding-bottom: 3rem;
   padding-right: 2rem;
-
-  .elixirs_details-title {
-    text-align: center;
-    padding: 1rem;
-    margin-bottom: 2rem;
-    width: 100%;
-    font-size: 5rem;
-    color: $green;
-  }
 
   .elixir_card {
     width: 18.75rem;

@@ -1,0 +1,54 @@
+#potion {
+  padding: 1rem;
+  background-color: $violet;
+  text-align: center;
+
+  .potion_details-title {
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    color: $green;
+  }
+
+  .potion-section {
+    button {
+      display: inline-block;
+      padding: 0.5rem 1rem;
+      margin-top: 1rem;
+      background-color: $blue;
+      color: $white;
+      border: none;
+      border-radius: 0.25rem;
+      font-size: 1rem;
+      cursor: pointer;
+
+      &:hover {
+        background-color: darken($blue, 10%);
+      }
+    }
+
+    .potion-info {
+      margin-top: 1rem;
+      padding: 1rem;
+    }
+  }
+}
+
+@include mobile {
+  #potion {
+    .img--potion {
+      height: 150px; // Adjust for mobile
+    }
+
+    .potion-info {
+      font-size: 0.9rem;
+    }
+  }
+}
+
+@include tablet {
+  // Tablet specific adjustments if needed
+}
+
+@include desktop {
+  // Desktop specific adjustments if needed
+}

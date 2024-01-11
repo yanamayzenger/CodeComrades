@@ -23,71 +23,119 @@
     </header>
     <main>
       <section id="elixirs_section">
-        <section id="potion_lab">
+        <div class="elixir-details-title">
           <h1>Elixir Details</h1>
-          <div class="elixir" id="polyjuice">
-            <h2>Polyjuice Potion</h2>
-            <img
-              src="./assets/images/polyjuice.jpg.webp"
-              alt="Polyjuice Potion"
-            />
-            <p>
-              Want to make yourself, er, not yourself? Well you need Polyjuice!
-              Ingredients: Lacewing flies, Bicorn horn, Knotgrass, Fluxweed,
-              Boomslang skin, and a piece of hair from the person you want to
-              become.
-            </p>
+        </div>
+        <section id="potion_lab">
+          <div class="elixir_card" id="polyjuice">
+            <div class="card_inner">
+              <!-- Front Side -->
+              <div class="card_front">
+                <h2>Polyjuice Potion</h2>
+                <p>
+                  Want to make yourself, er, not yourself? Well you need
+                  Polyjuice! Ingredients: Lacewing flies, Bicorn horn,
+                  Knotgrass, Fluxweed, Boomslang skin, and a piece of hair from
+                  the person you want to become.
+                </p>
+              </div>
+              <!-- Back Side -->
+              <div class="card_back">
+                <h2>Polyjuice Potion</h2>
+                <img
+                  src="./assets/images/polyjuice.jpg.webp"
+                  alt="Polyjuice Potion"
+                />
+              </div>
+            </div>
           </div>
 
-          <div class="elixir" id="felix_felicis">
-            <h2>Felix Felicis</h2>
-            <img
-              src="./assets/images/felix-felicis.jpg.webp"
-              alt="Felix Felicis"
-            />
-            <p>
-              If it's a dose of luck you're after, you've come to the right
-              place. Ingredients: Ashwinder egg, Squill bulb, Murtlap tentacle,
-              tincture of thyme, Occamy eggshell, and some powered rue.
-            </p>
+          <div class="elixir_card" id="felix_felicis">
+            <div class="card_inner">
+              <!-- Front Side -->
+              <div class="card_front">
+                <h2>Felix Felicis</h2>
+                <p>
+                  If it's a dose of luck you're after, you've come to the right
+                  place. Ingredients: Ashwinder egg, Squill bulb, Murtlap
+                  tentacle, tincture of thyme, Occamy eggshell, and some powered
+                  rue.
+                </p>
+              </div>
+              <!-- Back Side -->
+              <div class="card_back">
+                <h2>Felix Felicis</h2>
+                <img
+                  src="./assets/images/felix-felicis.jpg.webp"
+                  alt="Felix Felicis"
+                />
+              </div>
+            </div>
           </div>
 
-          <div class="elixir" id="amortentia">
-            <h2>Amortentia</h2>
-            <img src="./assets/images/amortentia.jpg.webp" alt="Amortentia" />
-            <p>
-              If there's a special someone you've got your sights on, then this
-              is the potion for you. Ingredients: Ashwinder egg, Rose thorn,
-              Peppermint, Powered moonstone, Pearl dust.
-            </p>
+          <div class="elixir_card" id="amortentia">
+            <div class="card_inner">
+              <!-- Front Side -->
+              <div class="card_front">
+                <h2>Amortentia</h2>
+                <p>
+                  If there's a special someone you've got your sights on, then
+                  this is the potion for you. Ingredients: Ashwinder egg, Rose
+                  thorn, Peppermint, Powered moonstone, Pearl dust.
+                </p>
+              </div>
+              <!-- Back Side -->
+              <div class="card_back">
+                <h2>Amortentia</h2>
+                <img
+                  src="./assets/images/amortentia.jpg.webp"
+                  alt="Amortentia"
+                />
+              </div>
+            </div>
           </div>
 
-          <div class="elixir" id="ageing_potion">
-            <h2>Ageing Potion</h2>
-            <img
-              src="./assets/images/ageing-potion.jpg.webp"
-              alt="Ageing Potion"
-            />
-            <p>
-              There's loads of fun to be had if you can pretend you're a real
-              life grown-up and this lovely liquid will help in that department.
-              Ingredients: Red wine, Prune juice, Hairy fungus, Tortoise shell,
-              Caterpillar, Bat tongue.
-            </p>
+          <div class="elixir_card" id="ageing_potion">
+            <div class="card_inner">
+              <!-- Front Side -->
+              <div class="card_front">
+                <h2>Ageing Potion</h2>
+                <p>
+                  There's loads of fun to be had if you can pretend you're a
+                  real life grown-up and this lovely liquid will help in that
+                  department. Ingredients: Red wine, Prune juice, Hairy fungus,
+                  Tortoise shell, Caterpillar, Bat tongue.
+                </p>
+              </div>
+              <!-- Back Side -->
+              <div class="card_back">
+                <h2>Ageing Potion</h2>
+                <img
+                  src="./assets/images/ageing-potion.jpg.webp"
+                  alt="Ageing Potion"
+                />
+              </div>
+            </div>
           </div>
         </section>
       </section>
 
-      <section id="search_section">
-        <h2>Search for Elixirs and Potions</h2>
-        <input type="text" id="search_bar" placeholder="Search elixirs..." />
-        <!-- Additional search functionality can be implemented here -->
+      <section id="potion">
+        <div class="potion_details-title">
+          <h1>Potter Potion Random Generator</h1>
+        </div>
+        <section class="potion-section">
+          <div class="img--potion"></div>
+          <button onclick="getPotionImage()">Get Potion!</button>
+          <div class="potion-info"></div>
+        </section>
       </section>
     </main>
     <footer>
       <p>&copy; 2024 Wizard's Elixir Mixer. A Harry Potter Fan Project.</p>
     </footer>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.2.1/axios.min.js"></script>
     <script src="./scripts/main.js"></script>
+    <script src="./scripts/potions.js"></script>
   </body>
 </html>
